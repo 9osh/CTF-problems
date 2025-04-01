@@ -1,0 +1,10 @@
+version: "3"
+services:
+  game:
+    build: .
+    image: game:latest
+    restart: always
+    ports:
+      - "22:22"
+    environment:
+      CHECK_NUMBERS: 20
